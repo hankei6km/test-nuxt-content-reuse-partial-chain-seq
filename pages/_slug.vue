@@ -34,16 +34,16 @@ export default {
         error({ statusCode: 404, message: "Page not found" });
       });
 
-    // const sorted = $content("")
-    //   .only(["title", "slug"])
-    //   .sortBy("position", "asc");
-    // const posts = await sorted.fetch();
-    // const [prev, next] = await sorted.surround(slug).fetch();
+     const sorted = $content("")
+       .only(["title", "slug"])
+       .sortBy("position", "asc");
+     const posts = await sorted.fetch();
+     const [prev, next] = await sorted.surround(slug).fetch();
 
-    const sorted = ($content) =>
-      $content("").only(["title", "slug"]).sortBy("position", "asc");
-    const [prev, next] = await sorted($content).surround(slug).fetch();
-    const posts = await sorted($content).fetch();
+    // const sorted = ($content) =>
+    //   $content("").only(["title", "slug"]).sortBy("position", "asc");
+    // const [prev, next] = await sorted($content).surround(slug).fetch();
+    // const posts = await sorted($content).fetch();
 
     return {
       page,

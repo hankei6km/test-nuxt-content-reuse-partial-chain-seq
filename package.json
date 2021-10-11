@@ -1,0 +1,18 @@
+{
+  "name": "test-nuxt-content-reuse-partial-chain-seq",
+  "version": "1.0.0",
+  "description": "",
+  "author": "hankei6km",
+  "scripts": {
+    "dev": "MINIMAL=1 CSB=1 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@nuxt/content": "1.14.0",
+    "nuxt": "2.15.8"
+  },
+  "keywords": []
+}

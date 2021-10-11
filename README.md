@@ -1,2 +1,3 @@
-# test-nuxt-content-reuse-partial-chain-seq
-Created with CodeSandbox
+# test Nuxt Content reuse partial chain seq
+
+How can I reuse partial chain seq?
